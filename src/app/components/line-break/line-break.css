@@ -1,0 +1,24 @@
+.lineBreakk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineBreakk .line {
+  width: 80px;
+  height: 4px;
+  background-color: var(--light-color);
+}
+
+.lineBreakk i {
+  font-size: 30px;
+  color: var(--light-color);
+}
+
+.alt-style-line {
+  background-color: var(--sec-color) !important;
+}
+
+.alt-style-i {
+  color: var(--sec-color) !important;
+}

@@ -1,0 +1,43 @@
+.about{
+    /* height: 100vh; */
+
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--sec-color);
+}
+.about-content{
+    padding: 120px 0;
+}
+.about h2 {
+    color: var(--light-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+.about p {
+    color: var(--light-color);
+    font-weight: 400;
+    font-size: 20px;
+}
+.aboutText{
+    padding: 8px;
+    text-align: left;
+}
+
+@media only screen and (max-width:768px) {
+    .about-content{
+    padding: 50px 0;
+}
+    .about p {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width:994px) {
+    .about p {
+    text-align: center;
+}
+}

@@ -1,0 +1,39 @@
+<section class="games py-5">
+  <div class="container">
+    <div class="row games-content">
+      <div class="col-md-12 text-center mb-4">
+        <h2>Games I Play</h2>
+
+        <app-line-break [isAlt]="true"></app-line-break>
+      </div>
+      <div class="row gallaryGames">
+        @for (game of gamesList; track $index) {
+        <div class="col-lg-4 col-md-6 mb-4 ">
+          <div class="card text-center h-100">
+            
+              <img
+                [src]="game.image"
+                class="card-img-top img-fluid"
+                [alt]="game.title"
+                style="height: 244px; object-fit: cover;"
+              />
+
+
+            <div class="card-body">
+              <p class="card-text">{{ game.title }}</p>
+            </div>
+          </div>
+        </div>
+      }
+      </div>
+      
+    </div>
+
+
+    @defer (on interaction) {
+    <app-more-games></app-more-games>
+    }@placeholder {
+      <button class="btn btn-lg bootn">See More</button>
+    }
+  </div>
+</section>

@@ -1,0 +1,126 @@
+footer , .footer{
+    z-index: 99999999999;
+}
+footer h5{
+    font-size: 28px;
+}
+footer a{
+    text-decoration: none;
+}
+.upperFooter{
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding: 50px 0px;
+}
+.leftFooter{
+    text-align: start;
+}
+.centerFooter{
+    text-align: center;
+}
+
+
+
+.iconsFooter{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-left: 19px;
+padding: 0 20px;
+}
+.iconsFooter i{
+    text-align: center;
+    margin-right: 24px;
+    font-size: 30px;
+    color: var(--light-color);
+    background-color: var(--main-color);
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--light-color);
+}
+
+.iconsFooter i:hover{
+scale: 1.2;
+box-shadow: 0 0 9px 0 var(--main-color);
+background-color: var(--sec-color);
+}
+
+
+
+
+.rightFooter{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightFooter h5{
+    transform: translateX(75px);
+}
+.rightFooter p{
+    transform: translateX(84px);
+}
+.lowerFooter{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+@media only screen and (max-width:768px) {
+    
+    .le{
+        order: 3;
+        padding: 20px 0;
+    }
+    .leftFooter{
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .ce{
+        order: 1;
+        padding: 20px 0;
+    }
+    .centerFooter{
+        text-align: center;
+    }
+    .ri{
+        order: 2;
+        padding: 20px 0;
+    }
+    .rightFooter h5 , .rightFooter p{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        padding: 0 20px;
+}
+    .mapa{
+        order: 4;
+    }
+    .iconsFooter{
+    padding: 0 50px;
+    margin: 0;
+    }
+    .iconsFooter i{
+    margin-right: 0;
+}
+
+    footer h5{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    footer p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .iconsFooter i{
+    font-size: 18px;
+}
+}

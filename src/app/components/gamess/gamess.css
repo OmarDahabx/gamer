@@ -1,0 +1,51 @@
+.games{
+    margin-top: 50px;
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+.games h2 {
+    color: var(--sec-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+.games p {
+    color: var(--sec-color);
+    font-weight: 400;
+    font-size: 20px;
+}
+.gallaryGames{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.games .bootn{
+    color: var(--sec-color);
+    border: 1px solid var(--main-color);
+    font-weight: 500;
+}
+.games .bootn:hover{
+    color: var(--light-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.games-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:768px){
+    .gallaryGames {
+    padding: 0 20px;
+}
+.card{
+    margin-bottom: 10px;
+}
+}

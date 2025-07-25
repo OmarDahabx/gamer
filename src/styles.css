@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --main-color:#BE3455;
+  --sec-color:#2b3d4f;
+  --light-color:#ffffff;
+  --dark-color:#19242e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    font-family: 'system-ui', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: 0.5 ease-in-out all;
+    -webkit-transition: 0.5 ease-in-out all;
+    -moz-transition: 0.5 ease-in-out all;
+    -ms-transition: 0.5 ease-in-out all;
+    -o-transition: 0.5 ease-in-out all;
+}
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #2b3d4f;
+}
+::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color: #ffffffb1;
+    border-radius: 2px;
+}

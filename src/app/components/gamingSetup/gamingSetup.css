@@ -1,0 +1,101 @@
+.gaming-setup {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.gaming-setup h2 {
+  color: var(--sec-color);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.gaming-setup p {
+  color: var(--sec-color);
+  font-weight: 400;
+}
+
+.portCon {
+  margin-top: 100px;
+}
+
+.setup-card img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body img {
+  max-height: 100%;
+  height: 100%;
+}
+
+.modal-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.setup-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  background-color: var(--sec-color);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay i {
+  color: var(--light-color);
+  opacity: 0.9;
+}
+
+.imgIcon {
+  text-decoration: none;
+}
+
+.card-container:hover .overlay {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .setup-card img {
+    height: 80%;
+    width: 100%;
+  }
+
+  .custom-gutter {
+    --bs-gutter-x: 0;
+    padding: 0 20px;
+  }
+}

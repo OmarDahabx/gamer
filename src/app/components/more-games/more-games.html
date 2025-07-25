@@ -1,0 +1,22 @@
+<div class="row more-content">
+    <div class="row moreGallaryGames">
+        @for (moreGame of moreGamesList; track $index) {
+        <div class="col-lg-4 col-md-6 mb-4 ">
+          <div class="card text-center h-100">
+            
+              <img
+                [src]="moreGame.image"
+                class="card-img-top img-fluid"
+                [alt]="moreGame.title"
+                style="height: 244px; object-fit: cover;"
+              />
+
+
+            <div class="card-body">
+              <p class="card-text">{{ moreGame.title }}</p>
+            </div>
+          </div>
+        </div>
+      }
+      </div>
+</div>

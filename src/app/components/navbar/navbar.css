@@ -1,0 +1,32 @@
+nav{
+    background-color: var(--main-color) !important;
+    z-index: 99999999;
+}
+.nav-text{
+    color: var(--light-color) !important;
+}
+.navbar-brand{
+    font-size: 32px;
+}
+.bg-sec{
+    background-color: var(--sec-color) !important;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+@media only screen and (max-width:768px){
+    .navbar ul li:first-of-type{
+        margin-top: 18px;
+    }
+    .navbar ul li{
+        margin-bottom: 10px;
+    }
+    .navbar ul li a{
+        text-indent: 25px;
+    }
+    .bg-sec{
+        margin-left: 25px;
+    }
+}

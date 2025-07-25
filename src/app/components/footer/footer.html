@@ -1,0 +1,67 @@
+<footer class="footer">
+  <div class="upperFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 le">
+          <div class="leftFooter">
+            <h5>LOCATION</h5>
+            <p>6 El Tahrir, Dokki</p>
+            <button class="btn btn-light" (click)="toggleMap()">
+                {{ showMap ? 'Hide Map' : 'View on Map' }}
+            </button>
+
+          </div>
+        </div>
+    
+        <div class="col-md-4 ce">
+          <div class="centerFooter">
+            <h5 class="mb-4">AROUND THE WEB</h5>
+            <div class="iconsFooter g-lg-4">
+              <a href="https://www.facebook.com/omar.aboeldahab.92" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile" >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/omardahab_" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/omardahab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/OmarDahabx" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 ri">
+          <div class="rightFooter">
+            <h5>ABOUT FREELANCER</h5>
+            <p>
+              Freelance is a free to use, licensed Bootstrap theme created by
+              Route
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-12 mt-5 mapa" [style.display]="showMap ? 'block' : 'none'">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.031040662859!2d31.196729875010096!3d30.035967318973345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846c9306e97af%3A0x5315ebf6378470c0!2sRoute!5e0!3m2!1sen!2seg!4v1753159241303!5m2!1sen!2seg"
+                    width="100%"
+                    height="300"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lowerFooter py-3">
+    <div class="container m-auto">
+      <p class="m-auto text-center">&copy; 2025 Omar Dahab. some rights reserved.</p>
+    </div>
+  </div>
+</footer>
