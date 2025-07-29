@@ -1,7 +1,13 @@
 nav{
     background-color: var(--main-color) !important;
     z-index: 99999999;
+    padding-block: 30px;
+    transition: padding 0.3s ease;
 }
+.navbar.scrolled {
+    padding-block: 20px;
+}
+
 .nav-text{
     color: var(--light-color) !important;
 }
